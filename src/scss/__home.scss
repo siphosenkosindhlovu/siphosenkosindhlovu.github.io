@@ -1,0 +1,62 @@
+@import '__colors.scss';
+@import '__typography.scss';
+@import '__grid.scss';
+
+body {
+  background-image: url("../images/Group\ 31@2x.png");
+  background-size: cover; 
+  overflow: hidden; 
+}
+.jumbotron {
+  height: calc(100vh );
+  display: flex;
+  h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: $secondary-text;
+    display: inline;    
+    div[class|="col"]{
+      margin-bottom: 25px;
+    }
+  }
+  .pop{
+    position: relative;
+    color: $primary-highlight;
+    &:before{
+      content: "responsive";
+      position: absolute;
+      font-size: 0.66em;
+      top: -1em;
+      color: $secondary-text;
+      opacity: 0.6;
+    };
+    &:after{
+      content: "progressive";
+      position: absolute;
+      font-size: 0.66em;
+      bottom: -1em;
+      color: $secondary-text;
+      opacity: 0.6;
+    }
+  }
+  .call-to-action{
+    background-color: $primary-highlight;
+    font-weight: medium;
+    font-size: 16px;
+    padding: {
+      top: 1em;
+      bottom: 1em;
+      left: 15px;
+      right: 15px;
+    }
+  }
+}
+
+@media screen and ($media-sma){
+ .jumbotron  {
+    h1{
+      font-size: 64px;
+      font-weight: 900;
+    }
+ }
+}

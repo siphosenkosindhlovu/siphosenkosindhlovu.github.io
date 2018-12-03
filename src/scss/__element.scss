@@ -1,0 +1,88 @@
+
+@import '__colors.scss';
+@import '__grid.scss';
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  top: (-340px);
+  transition: all 0.2s;
+  width: 100vw;
+  height: 90px;
+  background-color: $primary-text;
+  padding: 15px;
+  z-index: 1000000;
+  &_header{
+    width: 100%;
+    padding: 15px;
+    margin: {
+      left: -15px;
+      right: -15px;
+    };
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav{
+    width: 100vw;
+    margin: {
+      left: -15px;
+      right: -15px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      color: $secondary-text;
+      font-size: 24pt;
+      text-align: center;
+      li{
+        position: relative;
+        display: block;
+        padding: {
+          top: 15px;
+          bottom: 15px
+        }
+        &:after{
+          content: ".";
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+      }
+      li.active:after, li:hover{
+        color: $primary-highlight;
+        transition: all 0.2s ease-in;
+      }
+    }
+  }
+}
+.open {
+  top: 0;
+}
+
+@media screen and ($media-sma){
+  .navbar{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    .trigger {
+      display: none;
+    }
+    nav {
+      width: auto;
+      ul {
+        margin: 0;
+        li {
+          display: inline;
+          font-size: 16pt; 
+          padding: {
+            left: 33px;
+            right: 33px;
+          }
+        }
+      }
+    }
+  }
+}
