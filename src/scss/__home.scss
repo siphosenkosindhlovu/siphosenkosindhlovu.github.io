@@ -7,18 +7,19 @@ body {
   background-size: cover; 
   overflow: hidden; 
 }
-.jumbotron {
-  height: calc(100vh );
-  display: flex;
-  h1 {
-    font-size: 36px;
-    font-weight: bolder;
-    color: $secondary-text;
-    display: inline;    
-    div[class|="col"]{
-      margin-bottom: 25px;
-    }
+
+.jumbotext {
+  font-size: 40px;
+  font-weight: bolder;
+  color: $secondary-text;
+  display: inline;    
+  div[class|="col"]{
+    margin-bottom: 25px;
   }
+}
+.jumbotron {
+  height: 100vh;
+  display: flex;
   .pop{
     position: relative;
     color: $primary-highlight;
@@ -34,6 +35,7 @@ body {
       content: "progressive";
       position: absolute;
       font-size: 0.66em;
+      left: 15px;
       bottom: -1em;
       color: $secondary-text;
       opacity: 0.6;
@@ -54,7 +56,7 @@ body {
 
 @media screen and ($media-sma){
  .jumbotron  {
-    h1{
+    .jumbotext{
       font-size: 64px;
       font-weight: 900;
     }

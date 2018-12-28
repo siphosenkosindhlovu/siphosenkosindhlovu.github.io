@@ -49,6 +49,10 @@ module.exports = {
       template: "./src/pug/index.pug",
       filename: "./index.html"
     }),
+    new HtmlWebPackPlugin({
+      template: "./src/pug/about.pug",
+      filename: "./about.html"
+    }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional

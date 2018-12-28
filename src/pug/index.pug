@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-html(lang=en-GB)
+html(lang='en-GB')
   head
     meta(charset='utf-8')
     meta(
@@ -8,13 +8,12 @@ html(lang=en-GB)
     )
     title uSipho Front End
   body
-    header.navbar.container
+    header.navbar.container-fluid
       nav.order-md-2
-        ul
-          li.active Home
-          li  About
-          li  Gallery
-          li  Contact
+        a.active Home
+        a(href="about.html")  About
+        a  Gallery
+        a  Contact
 
       .navbar_header
         .logo
@@ -24,17 +23,17 @@ html(lang=en-GB)
 
       
     
-    main.container-fluid.jumbotron.align-items-center
-      h1.jumbotext.row
-        .col-12.offset-sm-2 Build 
-      
-        .col-12.col-sm-9.offset-sm-2.pop unstoppable 
-         
-        .col-12.col-sm-8.offset-sm-2 web 
-         
-        .col-12.col-sm-7.offset-sm-2 apps.
+    main.container-fluid.jumbotron.justify-content-center.align-items-center
+      div
+        .row.jumbotext
+          .col-12.col-xl Build 
+          .col-12.col-xl.pop unstoppable  
+          .col-12.col-xl web 
+          .col-12.col-xl apps.
+        br
+        br
+        br
+        br
+        .row.jumbotext
+          a.call-to-action Build with Sipho.
 
-        br
-        br
-        br
-        a.call-to-action Build with Sipho.
