@@ -1,62 +1,88 @@
 @import '__colors.scss';
 @import '__typography.scss';
 @import '__grid.scss';
-
-body {
-  background-image: url("../images/Group\ 31@2x.png");
-  background-size: cover; 
-  overflow: hidden; 
+.red-txt{
+  color: $primary-highlight;
 }
-.jumbotron {
-  height: calc(100vh );
-  display: flex;
-  h1 {
-    font-size: 36px;
-    font-weight: bolder;
-    color: $secondary-text;
-    display: inline;    
-    div[class|="col"]{
-      margin-bottom: 25px;
-    }
-  }
-  .pop{
-    position: relative;
-    color: $primary-highlight;
-    &:before{
-      content: "responsive";
-      position: absolute;
-      font-size: 0.66em;
-      top: -1em;
-      color: $secondary-text;
-      opacity: 0.6;
-    };
-    &:after{
-      content: "progressive";
-      position: absolute;
-      font-size: 0.66em;
-      bottom: -1em;
-      color: $secondary-text;
-      opacity: 0.6;
-    }
-  }
-  .call-to-action{
-    background-color: $primary-highlight;
-    font-weight: medium;
-    font-size: 16px;
-    padding: {
-      top: 1em;
-      bottom: 1em;
-      left: 15px;
-      right: 15px;
-    }
-  }
-}
-
-@media screen and ($media-sma){
- .jumbotron  {
-    h1{
-      font-size: 64px;
-      font-weight: 900;
-    }
+ .page-banner{
+   position: relative;
+   color: white;
+   display: flex;
+   align-items: center;
+   padding: {
+     top: 30px;
+     bottom: 30px;
+   }
+   width: 100vw;
+   background-image: url('../images/apple.jpg');
+   background-size: cover;
+   background-position:top center;
+   .text-group{
+     margin: 25px;
+     z-index: 1;
+     h1 {
+       font-size: 41px;
+       font-weight: 400;
+       color: $secondary-text;
+        hr{
+          margin: 0;
+        }
+        small{
+          position: relative;
+          bottom: 15px;
+          font-weight: bold;
+          margin-top: -10px;
+          font-size: 18px;
+        }
+     }
+     .button-group {
+       display: flex;
+       align-items: flex-start;
+       justify-content: flex-start;
+       flex-direction: column;
+       a{
+         font-size: 16px;
+         border-bottom: 3px solid $primary-highlight;
+         padding: 0.5em;
+         padding-left: 25px;
+         width: 205px;
+         font-weight: 700;
+         text-decoration: none;
+         color: white;
+         margin-left: -25px;
+         margin-bottom: 30px;
+       }
+     }
+     .carets{
+       width: 205px;
+       margin-left: -25px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       span{
+         text-align: center;
+       }
+     }
+   }
  }
-}
+
+ .overlay {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   max-height: inherit;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 0;
+ }
+   
+   @media screen and ($media-med){
+      .text-group{
+        h1{
+          font-size: 64px !important;
+          small{
+            font-size:40px !important;
+          }
+        }
+      }
+   }

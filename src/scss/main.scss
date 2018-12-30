@@ -1,11 +1,18 @@
 @import '__typography.scss';
 @import '__colors.scss';
-@import '__element.scss';
+@import '__nav.scss';
 @import '__home.scss';
 @import '__grid.scss';
 body{
-  //margin: 90px 0 0 0;
+  margin: 0;
   padding: 0;
 }
+main{
+  position: absolute;
+  top: 60px;
+}
 
-
+.open{
+  position: relative;
+  top: 0
+}

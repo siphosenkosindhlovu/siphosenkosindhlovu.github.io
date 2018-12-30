@@ -8,33 +8,39 @@ html(lang=en-GB)
     )
     title uSipho Front End
   body
-    header.navbar.container
-      nav.order-md-2
-        ul
-          li.active Home
-          li  About
-          li  Gallery
-          li  Contact
-
-      .navbar_header
-        .logo
+    nav.top-nav
+      .brand
+        a.logo
           img(src='../images/usipho.png')
-        .trigger
+        a.trigger
           img(src='../images/ic_menu_24px.png')
-
-      
-    
-    main.container-fluid.jumbotron.align-items-center
-      h1.jumbotext.row
-        .col-12.offset-sm-2 Build 
-      
-        .col-12.col-sm-9.offset-sm-2.pop unstoppable 
-         
-        .col-12.col-sm-8.offset-sm-2 web 
-         
-        .col-12.col-sm-7.offset-sm-2 apps.
-
-        br
-        br
-        br
-        a.call-to-action Build with Sipho.
+      .nav-links
+        a(href='#') Home
+        a(href='#') About
+        a(href='#') Portfolio
+        a(href='#') Contact
+        a(href='#').red-bg HireMe
+    main
+      header.page-banner
+        .text-group
+          h1 Siphosenkosi Ndhlovu
+            hr
+            small Builds 
+              span.red-txt unstoppable 
+              | web apps. 
+          br
+          br
+          .button-group
+            a(href="#").red-bg Build with Sipho.
+            a(href="#") what i do.
+            a(href="#") portfolio.
+            
+          .carets
+            span  
+              img(src="../images/caret.png")
+            span
+              img(src="../images/caret.png")
+            span
+              img(src="../images/caret.png")
+        .overlay
+      footer
