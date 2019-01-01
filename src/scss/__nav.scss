@@ -1,6 +1,8 @@
 
 @import '__colors.scss';
 @import '__grid.scss';
+
+
 .red-bg{
   background-color: $primary-highlight !important;
   color: white;
@@ -50,7 +52,9 @@
 
 @media screen and ($media-sma){
   .top-nav{
+    z-index: 3000;
     flex-direction: row;
+    background: transparent;
     .trigger{
       display: none;
     }
@@ -64,6 +68,7 @@
         &:hover{
           background-color: transparent;
         }
+        @include namathelimargin(right, -30px);
       }
     }
   }

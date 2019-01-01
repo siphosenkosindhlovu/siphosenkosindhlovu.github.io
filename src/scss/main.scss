@@ -16,3 +16,10 @@ main{
   position: relative;
   top: 0
 }
+
+@media screen and ($media-sma){
+  main{
+    top: 0;
+    z-index: 299;
+  }
+}
