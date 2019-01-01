@@ -8,32 +8,125 @@ html(lang='en-GB')
     )
     title uSipho Front End
   body
-    header.navbar.container-fluid
-      nav.order-md-2
-        a.active Home
-        a(href="about.html")  About
-        a  Gallery
-        a  Contact
-
-      .navbar_header
-        .logo
+    nav.top-nav
+      .brand
+        a.logo
           img(src='../images/usipho.png')
-        .trigger
+        a.trigger
           img(src='../images/ic_menu_24px.png')
+      .nav-links
+        a(href='#') Home
+        a(href='#') About
+        a(href='#') Portfolio
+        a(href='#') Contact
+        a(href='#').red-bg HireMe
+    main
+      header.page-banner
+        .text-group
+          h1 Siphosenkosi Ndhlovu
+            hr
+            small Builds 
+              span.red-txt unstoppable 
+              | web apps. 
+          br
+          br
+          .button-group
+            a(href="#").red-bg Build with Sipho.
+            a(href="#").button-primary what i do.
+            a(href="#").button-primary portfolio.
+            
+          a.carets
+            span  
+              img(src="../images/caret.png")
+            span
+              img(src="../images/caret.png")
+            span
+              img(src="../images/caret.png")
+        .overlay
+      section.page-section
+        .container-fluid
+          h1.button-primary(
+            style="color: black; display: inline-block; margin-left:-15px; width: 205px; padding-left: 30px;"
+          ) what i do.
 
-      
-    
-    main.container-fluid.jumbotron.justify-content-center.align-items-center
-      div
-        .row.jumbotext
-          .col-12.col-xl Build 
-          .col-12.col-xl.pop unstoppable  
-          .col-12.col-xl web 
-          .col-12.col-xl apps.
-        br
-        br
-        br
-        br
-        .row.jumbotext
-          a.call-to-action Build with Sipho.
+          .container
+            .row
+              .col(style="text-align: center; font-weight: 500")
+                | A front-end developer's role is to combine design and business logic to achieve a user-facing product. To 
+                | do this successfully, a wide skill set 
+                | is necessary to produce a quality 
+                | user experience.
 
+            .row
+              .col-sm-12.col-md
+                figure.service
+                  img(src="../images/ic_phonelink_24px.png")
+                  figcaption Responsive Web Design.
+              .col-sm-12.col-md
+                figure.service
+                  img(src="../images/Union 2.png")
+                  figcaption High Speed Progressive Web Apps.
+              .col-sm-12.col-md
+                figure.service
+                  img(src="../images/Group 35.png")
+                  figcaption Static and Dynamic Websites
+      section.page-section
+        .container-fluid
+          h1.button-primary(
+            style="color: black; display: inline-block; margin-left:-15px; width: 205px; padding-left: 30px;"
+          ) portfolio.
+
+          .container
+            .row
+              .col-md-4
+                img(src="../images/Group 60.png")
+              .col-md-4
+                img(src="../images/Group 60.png")
+              .col-md-4
+                img(src="../images/Group 60.png")
+            .row
+              .col-md-4
+                img(src="../images/Group 60.png")
+              .col-md-4
+                img(src="../images/Group 60.png")
+              .col-md-4
+                img(src="../images/Group 60.png")
+
+
+      footer
+        a(href="#").red-bg.big-footer-button About Sipho
+        .container
+          .row
+            .col-sm-12.col-md-4
+              dl.link-list
+                a(href="#")  
+                  dt About.
+                  dd Learn more about my skills and education.
+                a(href="#")    
+                  dt Contact.
+                  dd Send me a general message.
+                a(href="#")
+                  dt Hire Me.
+                  dd Enquire about hiring me.
+            .col-sm-12.col-md-4
+              .social-footer
+                figure.social-button-footer
+                  img(src="../images/Linkedin.png")
+                  figcaption LinkedIn
+  
+                figure.social-button-footer
+                  img(src="../images/Instagram.png")
+                  figcaption @usipho
+  
+                figure.social-button-footer
+                  img(src="../images/Skype.png")
+                  figcaption live:sipho.ndhlovu
+  
+                figure.social-button-footer
+                  img(src="../images/Github.png")
+                  figcaption @siphosenkosindhlovu
+            .col-sm-12.col-md-4
+              span(style="color: white") Designed and Coded By:
+              br
+              .logo
+                img(src='../images/usipho.png')

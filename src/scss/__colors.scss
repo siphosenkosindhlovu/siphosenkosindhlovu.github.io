@@ -1,5 +1,17 @@
 $secondary-highlight: hsl(355, 61%, 47%);
 $primary-highlight: hsl(355, 75%, 55%);
-$primary-text: hsl(218, 100%, 11%);
+$primary-text: #181818;
 $secondary-text: hsl(0, 0%, 84%);
 $jumbo-trans: hsla(213, 100, 23, 0.66);
+
+
+@mixin namathelimargin($margin, $value){
+  font-size: 16px;
+  padding: 0.5em;
+  padding-left: 25px;
+  width: 205px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-#{$margin}: $value;
+  margin-bottom: 30px;
+}

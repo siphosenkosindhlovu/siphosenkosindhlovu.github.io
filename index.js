@@ -1,5 +1,10 @@
 import "./src/scss/main.scss";
 import "./src/css/bootstrap-grid.css";
-import {trigger} from  "./src/js/nav";
 
-trigger()
+
+var trigger = document.querySelector('.trigger')
+var main = document.querySelector('main')
+trigger.addEventListener('click', e => {
+  main.classList.toggle('open')
+  console.log("clicked")
+})
