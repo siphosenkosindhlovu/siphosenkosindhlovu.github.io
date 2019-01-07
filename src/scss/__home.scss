@@ -31,10 +31,10 @@
    background-size: cover;
    background-position:top center;
    .text-group{
-     margin: 30px;
+     margin: 25px;
      z-index: 1;
      h1 {
-       font-size: 41px;
+       font-size: 3em;
        font-weight: 400;
        color: $secondary-text;
         hr{
@@ -45,7 +45,7 @@
           bottom: 15px;
           font-weight: bold;
           margin-top: -10px;
-          font-size: 18px;
+          font-size: 0.5em;
         }
      }
      .button-group {
